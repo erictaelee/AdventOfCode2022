@@ -1,6 +1,7 @@
 const {readFileSync} = require('fs');
 
 function mostCalories(filename) {
+  //part 1
   const array = readFileSync(filename, 'utf-8');
 
   let sumArray = array.split('\n\n').map((el) => {
@@ -14,7 +15,7 @@ function mostCalories(filename) {
 
   console.log(sorted[0]); //72718
   
-  //sum top 3
+  //part 2
   let sumTop3 = 0;
   for (let i = 0; i < 3; i++) {
     sumTop3 += sorted[i];
