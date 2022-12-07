@@ -13,6 +13,13 @@ function mostCalories(filename) {
   })
 
   console.log(sorted[0]); //72718
+  
+  //sum top 3
+  let sumTop3 = 0;
+  for (let i = 0; i < 3; i++) {
+    sumTop3 += sorted[i];
+  }
+  console.log(sumTop3) //213089
 
 }
 
